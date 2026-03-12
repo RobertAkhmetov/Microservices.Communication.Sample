@@ -1,0 +1,12 @@
+bin/
+obj/
+.idea/
+.vs/
+TestResults/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.nupkg
+artifacts/
+coverage/

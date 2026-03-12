@@ -1,0 +1,21 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/BuildingBlocks/" />
+  <Folder Name="/src/BuildingBlocks/Contracts/">
+    <Project Path="src/BuildingBlocks/Contracts/Microservices.Communication.Sample.Contracts.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/" />
+  <Folder Name="/src/Services/Service1/" />
+  <Folder Name="/src/Services/Service1/Api/">
+    <Project Path="src/Services/Service1/Api/Microservices.Communication.Sample.Service1.Api.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Service1/Application/">
+    <Project Path="src/Services/Service1/Application/Microservices.Communication.Sample.Service1.Application.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Service1/Domain/">
+    <Project Path="src/Services/Service1/Domain/Microservices.Communication.Sample.Service1.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Service1/Infrastructure/">
+    <Project Path="src/Services/Service1/Infrastructure/Microservices.Communication.Sample.Service1.Infrastructure.csproj" />
+  </Folder>
+</Solution>

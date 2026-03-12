@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "restore",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "restore",
+        "Microservices.Communication.Sample.sln"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "build",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "Microservices.Communication.Sample.sln"
+      ],
+      "dependsOn": "restore",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "run-service1",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "run",
+        "--project",
+        "src/Services/Service1/Api/Microservices.Communication.Sample.Service1.Api.csproj"
+      ],
+      "dependsOn": "build",
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}
