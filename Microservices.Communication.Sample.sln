@@ -31,6 +31,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{B3158BD3-684
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices.Communication.Sample.Service1.Api", "src\Services\Service1\Api\Microservices.Communication.Sample.Service1.Api.csproj", "{7785BB5D-7AED-47FA-AEF9-FA89F173A968}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service2", "src\Services\Service2\Service2.csproj", "{FEBA5E8B-ADD4-4E2E-A7CA-DFB7300C5909}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,6 +103,18 @@ Global
 		{7785BB5D-7AED-47FA-AEF9-FA89F173A968}.Release|x64.Build.0 = Release|Any CPU
 		{7785BB5D-7AED-47FA-AEF9-FA89F173A968}.Release|x86.ActiveCfg = Release|Any CPU
 		{7785BB5D-7AED-47FA-AEF9-FA89F173A968}.Release|x86.Build.0 = Release|Any CPU
+		{FEBA5E8B-ADD4-4E2E-A7CA-DFB7300C5909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEBA5E8B-ADD4-4E2E-A7CA-DFB7300C5909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEBA5E8B-ADD4-4E2E-A7CA-DFB7300C5909}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FEBA5E8B-ADD4-4E2E-A7CA-DFB7300C5909}.Debug|x64.Build.0 = Debug|Any CPU
+		{FEBA5E8B-ADD4-4E2E-A7CA-DFB7300C5909}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FEBA5E8B-ADD4-4E2E-A7CA-DFB7300C5909}.Debug|x86.Build.0 = Debug|Any CPU
+		{FEBA5E8B-ADD4-4E2E-A7CA-DFB7300C5909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEBA5E8B-ADD4-4E2E-A7CA-DFB7300C5909}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEBA5E8B-ADD4-4E2E-A7CA-DFB7300C5909}.Release|x64.ActiveCfg = Release|Any CPU
+		{FEBA5E8B-ADD4-4E2E-A7CA-DFB7300C5909}.Release|x64.Build.0 = Release|Any CPU
+		{FEBA5E8B-ADD4-4E2E-A7CA-DFB7300C5909}.Release|x86.ActiveCfg = Release|Any CPU
+		{FEBA5E8B-ADD4-4E2E-A7CA-DFB7300C5909}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -119,5 +133,6 @@ Global
 		{C5CABB47-BCCC-4B98-93F1-3A3A050B8179} = {B1302B45-6D95-136E-BC8A-34BE81130FB4}
 		{B3158BD3-6840-5C59-2928-10C78618482A} = {1F02A240-6FB7-E086-B746-D6904A1E33F6}
 		{7785BB5D-7AED-47FA-AEF9-FA89F173A968} = {B3158BD3-6840-5C59-2928-10C78618482A}
+		{FEBA5E8B-ADD4-4E2E-A7CA-DFB7300C5909} = {984BB9B3-3FA3-BE33-9484-CAC21695A33C}
 	EndGlobalSection
 EndGlobal
