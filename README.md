@@ -1,11 +1,16 @@
 # Microservices.Communication.Sample
 
-Решение содержит микросервис (`Service1`) и контрактный слой для коммуникации между сервисами.
+Решение содержит микросервис (`Service1`) и (`Service2`) +  контрактный слой для коммуникации между сервисами.
 
 ## Запуск RabbitMQ
 
 ```bash
 docker compose up -d
+```
+
+##  если хошь запустить кафку
+```bash
+docker compose --profile kafka up -d
 ```
 
 RabbitMQ Management UI: [http://localhost:15672](http://localhost:15672)  
@@ -21,6 +26,8 @@ RabbitMQ Management UI: [http://localhost:15672](http://localhost:15672)
 
 ```bash
 dotnet run --project src/Services/Service1/Api/Microservices.Communication.Sample.Service1.Api.csproj
+
+dotnet run --project src/Services/Service1/Api/Microservices.Communication.Sample.Service2.Api.csproj
 ```
 
 ## API
