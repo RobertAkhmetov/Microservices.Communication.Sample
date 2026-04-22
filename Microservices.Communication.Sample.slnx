@@ -18,4 +18,8 @@
   <Folder Name="/src/Services/Service1/Infrastructure/">
     <Project Path="src/Services/Service1/Infrastructure/Microservices.Communication.Sample.Service1.Infrastructure.csproj" />
   </Folder>
+  <Folder Name="/src/Services/Service2/" />
+  <Folder Name="/src/Services/Service2/Domain/">
+    <Project Path="src/Services/Service2/Domain/Microservices.Communication.Sample.Service2.Domain/Microservices.Communication.Sample.Service2.Domain.csproj" />
+  </Folder>
 </Solution>
