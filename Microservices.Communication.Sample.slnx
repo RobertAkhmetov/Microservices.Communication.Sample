@@ -22,7 +22,13 @@
   <Folder Name="/src/Services/Service2/Api/">
     <Project Path="src/Services/Service2/Api/Microservices.Communication.Sample.Service2.Api.csproj" />
   </Folder>
+  <Folder Name="/src/Services/Service2/Application/">
+    <Project Path="src/Services/Service2/Application/Microservices.Communication.Sample.Service2.Application.csproj" />
+  </Folder>
   <Folder Name="/src/Services/Service2/Domain/">
     <Project Path="src/Services/Service2/Domain/Microservices.Communication.Sample.Service2.Domain/Microservices.Communication.Sample.Service2.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Service2/Infrastructure/">
+    <Project Path="src/Services/Service2/Infrastructure/Microservices.Communication.Sample.Service2.Infrastructure.csproj" />
   </Folder>
 </Solution>
