@@ -37,6 +37,18 @@
       ],
       "dependsOn": "build",
       "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "run-service2",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "run",
+        "--project",
+        "src/Services/Service2/Api/Microservices.Communication.Sample.Service2.Api.csproj"
+      ],
+      "dependsOn": "build",
+      "problemMatcher": "$msCompile"
     }
   ]
 }
