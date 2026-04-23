@@ -4,5 +4,5 @@ namespace Microservices.Communication.Sample.Service1.Application.Abstractions.M
 
 public interface IService2Messenger
 {
-    Task<Service2BaseResponse> RequestBaseMessageAsync(Service2BaseRequest request, CancellationToken cancellationToken);
+    Task<ServiceBaseResponse> RequestBaseMessageAsync(ServiceBaseRequest request, CancellationToken cancellationToken);
 }

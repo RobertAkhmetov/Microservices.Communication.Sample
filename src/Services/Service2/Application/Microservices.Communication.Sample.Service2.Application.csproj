@@ -7,7 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="14.1.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\..\BuildingBlocks\Contracts\Microservices.Communication.Sample.Contracts.csproj" />
+    <ProjectReference Include="..\Domain\Microservices.Communication.Sample.Service2.Domain\Microservices.Communication.Sample.Service2.Domain.csproj" />
   </ItemGroup>
 
 </Project>

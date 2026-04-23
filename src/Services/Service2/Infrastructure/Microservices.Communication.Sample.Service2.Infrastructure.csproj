@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\BuildingBlocks\Contracts\Microservices.Communication.Sample.Contracts.csproj" />
+    <ProjectReference Include="..\Application\Microservices.Communication.Sample.Service2.Application.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

@@ -1,6 +1,6 @@
 namespace Microservices.Communication.Sample.Contracts.Messaging;
 
-public sealed record Service2BaseRequest(
+public sealed record ServiceBaseRequest(
     Guid RequestId,
     string Message,
     DateTimeOffset SentAtUtc);

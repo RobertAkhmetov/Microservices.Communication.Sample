@@ -15,8 +15,8 @@ internal sealed class RabbitMqService2Messenger(
     private static readonly JsonSerializerOptions SerializerOptions = new(JsonSerializerDefaults.Web);
     private readonly RabbitMqOptions _options = options.Value;
 
-    public async Task<Service2BaseResponse> RequestBaseMessageAsync(
-        Service2BaseRequest request,
+    public async Task<ServiceBaseResponse> RequestBaseMessageAsync(
+        ServiceBaseRequest request,
         CancellationToken cancellationToken)
     {
         var connection = await connectionProvider.GetConnectionAsync(cancellationToken);
@@ -39,7 +39,7 @@ internal sealed class RabbitMqService2Messenger(
             cancellationToken: cancellationToken);
 
         var correlationId = request.RequestId.ToString("N");
-        var responseSource = new TaskCompletionSource<Service2BaseResponse>(TaskCreationOptions.RunContinuationsAsynchronously);
+        var responseSource = new TaskCompletionSource<ServiceBaseResponse>(TaskCreationOptions.RunContinuationsAsynchronously);
 
         var consumer = new AsyncEventingBasicConsumer(channel);
         consumer.ReceivedAsync += (_, delivery) =>
@@ -51,7 +51,7 @@ internal sealed class RabbitMqService2Messenger(
 
             try
             {
-                var response = JsonSerializer.Deserialize<Service2BaseResponse>(delivery.Body.Span, SerializerOptions);
+                var response = JsonSerializer.Deserialize<ServiceBaseResponse>(delivery.Body.Span, SerializerOptions);
                 if (response is null)
                 {
                     responseSource.TrySetException(new InvalidOperationException("Service2 response payload is empty."));

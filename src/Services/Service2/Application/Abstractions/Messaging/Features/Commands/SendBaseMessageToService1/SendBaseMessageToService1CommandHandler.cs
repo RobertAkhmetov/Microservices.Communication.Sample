@@ -1,15 +1,15 @@
 using MediatR;
 using Microservices.Communication.Sample.Contracts.Messaging;
-using Microservices.Communication.Sample.Service1.Application.Abstractions.Messaging;
-using Microservices.Communication.Sample.Service1.Domain.Entities;
+using Microservices.Communication.Sample.Service2.Application.Abstractions.Messaging;
+using Microservices.Communication.Sample.Service2.Domain.Entities;
 
-namespace Microservices.Communication.Sample.Service1.Application.Features.SendBaseMessageToService2;
+namespace Microservices.Communication.Sample.Service2.Application.Abstractions.Messaging.Features.Commands.SendBaseMessageToService1;
 
-internal sealed class SendBaseMessageToService2CommandHandler(IService2Messenger service2Messenger)
-    : IRequestHandler<SendBaseMessageToService2Command, SendBaseMessageToService2Result>
+internal sealed class SendBaseMessageToService1CommandHandler(IService2Messenger service2Messenger)
+    : IRequestHandler<SendBaseMessageToService1Command, SendBaseMessageToService1Result>
 {
-    public async Task<SendBaseMessageToService2Result> Handle(
-        SendBaseMessageToService2Command request,
+    public async Task<SendBaseMessageToService1Result> Handle(
+        SendBaseMessageToService1Command request,
         CancellationToken cancellationToken)
     {
         if (string.IsNullOrWhiteSpace(request.Message))
@@ -23,7 +23,7 @@ internal sealed class SendBaseMessageToService2CommandHandler(IService2Messenger
             new ServiceBaseRequest(message.Id, message.Body, message.CreatedAtUtc),
             cancellationToken);
 
-        return new SendBaseMessageToService2Result(
+        return new SendBaseMessageToService1Result(
             response.RequestId,
             message.Body,
             response.Message,
