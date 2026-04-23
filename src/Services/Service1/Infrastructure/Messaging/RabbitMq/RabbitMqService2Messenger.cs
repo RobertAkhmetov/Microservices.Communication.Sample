@@ -6,7 +6,7 @@ using Microsoft.Extensions.Options;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
-namespace Microservices.Communication.Sample.Service1.Infrastructure.Messaging;
+namespace Microservices.Communication.Sample.Service1.Infrastructure.Messaging.RabbitMq;
 
 internal sealed class RabbitMqService2Messenger(
     RabbitMqConnectionProvider connectionProvider,

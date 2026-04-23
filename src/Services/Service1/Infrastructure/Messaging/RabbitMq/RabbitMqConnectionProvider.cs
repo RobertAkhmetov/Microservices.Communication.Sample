@@ -2,7 +2,7 @@ using Microservices.Communication.Sample.Service1.Infrastructure.Configuration;
 using Microsoft.Extensions.Options;
 using RabbitMQ.Client;
 
-namespace Microservices.Communication.Sample.Service1.Infrastructure.Messaging;
+namespace Microservices.Communication.Sample.Service1.Infrastructure.Messaging.RabbitMq;
 
 internal sealed class RabbitMqConnectionProvider(IOptions<RabbitMqOptions> options) : IAsyncDisposable
 {
