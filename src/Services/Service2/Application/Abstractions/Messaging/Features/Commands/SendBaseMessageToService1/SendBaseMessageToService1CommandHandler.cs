@@ -5,7 +5,7 @@ using Microservices.Communication.Sample.Service2.Domain.Entities;
 
 namespace Microservices.Communication.Sample.Service2.Application.Abstractions.Messaging.Features.Commands.SendBaseMessageToService1;
 
-internal sealed class SendBaseMessageToService1CommandHandler(IService2Messenger service2Messenger)
+internal sealed class SendBaseMessageToService1CommandHandler(IService1Messenger service2Messenger)
     : IRequestHandler<SendBaseMessageToService1Command, SendBaseMessageToService1Result>
 {
     public async Task<SendBaseMessageToService1Result> Handle(

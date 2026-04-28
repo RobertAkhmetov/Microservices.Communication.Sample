@@ -8,9 +8,9 @@ using RabbitMQ.Client.Events;
 
 namespace Microservices.Communication.Sample.Service2.Infrastructure.Messaging;
 
-internal sealed class RabbitMqService2Messenger(
+internal sealed class RabbitMqService1Messenger(
     RabbitMqConnectionProvider connectionProvider,
-    IOptions<RabbitMqOptions> options) : IService2Messenger
+    IOptions<RabbitMqOptions> options) : IService1Messenger
 {
     private static readonly JsonSerializerOptions SerializerOptions = new(JsonSerializerDefaults.Web);
     private readonly RabbitMqOptions _options = options.Value;
