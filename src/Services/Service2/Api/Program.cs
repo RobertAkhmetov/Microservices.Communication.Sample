@@ -1,4 +1,5 @@
 using Microservices.Communication.Sample.Service2.Application;
+using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,16 +25,17 @@ var summaries = new[]
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
 };
 
-app.MapGet("/weatherforecast", () =>
+app.MapPost("/service1/base", async ([FromBody] SendBaseMessageRequest request, CancellationToken token) =>
 {
-    return Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
+    try
+    {
+        //var result = await sender
+    }
+    catch (System.Exception)
+    {
+        
+        throw;
+    }
 })
 .WithName("GetWeatherForecast");
 
