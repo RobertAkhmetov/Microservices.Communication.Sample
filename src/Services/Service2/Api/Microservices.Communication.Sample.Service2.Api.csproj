@@ -10,4 +10,9 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Microservices.Communication.Sample.Service2.Application.csproj" />
+    <ProjectReference Include="..\Infrastructure\Microservices.Communication.Sample.Service2.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
