@@ -1,7 +1,5 @@
 using Microservices.Communication.Sample.Service1.Application;
 using Microservices.Communication.Sample.Service1.Infrastructure;
-using ApplicationDependencyInjection = Microservices.Communication.Sample.Service1.Application.DependencyInjection;
-using InfrastructureDependencyInjection = Microservices.Communication.Sample.Service1.Infrastructure.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
