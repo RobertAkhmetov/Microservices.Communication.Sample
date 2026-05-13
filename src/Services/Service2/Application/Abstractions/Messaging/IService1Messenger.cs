@@ -1,6 +1,6 @@
-using Microservices.Communication.Sample.Contracts.Messaging;
+using Contracts.Messaging;
 
-namespace Microservices.Communication.Sample.Service2.Application.Abstractions.Messaging;
+namespace Service2.Application.Abstractions.Messaging;
 
 public interface IService1Messenger
 {

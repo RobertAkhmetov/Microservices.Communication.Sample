@@ -1,7 +1,7 @@
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Microservices.Communication.Sample.Service2.Application;
+namespace Service2.Application;
 
 public static class DependencyInjection
 {

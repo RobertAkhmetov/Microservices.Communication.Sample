@@ -6,7 +6,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "${workspaceFolder}/src/Services/Service1/Api/bin/Debug/net10.0/Microservices.Communication.Sample.Service1.Api.dll",
+      "program": "${workspaceFolder}/src/Services/Service1/Api/bin/Debug/net10.0/Service1.Api.dll",
       "args": [],
       "cwd": "${workspaceFolder}/src/Services/Service1/Api",
       "stopAtEntry": false,

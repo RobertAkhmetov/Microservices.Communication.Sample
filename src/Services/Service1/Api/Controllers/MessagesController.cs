@@ -1,9 +1,9 @@
 using MediatR;
-using Microservices.Communication.Sample.Service1.Api.Contracts;
-using Microservices.Communication.Sample.Service1.Application.Features.SendBaseMessageToService2;
+using Service1.Api.Contracts;
+using Service1.Application.Features.SendBaseMessageToService2;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Microservices.Communication.Sample.Service1.Api.Controllers;
+namespace Service1.Api.Controllers;
 
 [ApiController]
 [Route("api/messages")]

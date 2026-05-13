@@ -1,7 +1,7 @@
 using System.Collections;
-using Microservices.Communication.Sample.Service2.Application.Abstractions.Messaging;
-using Microservices.Communication.Sample.Service2.Infrastructure.Configuration;
-using Microservices.Communication.Sample.Service2.Infrastructure.Messaging;
+using Service2.Application.Abstractions.Messaging;
+using Service2.Infrastructure.Configuration;
+using Service2.Infrastructure.Messaging;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 

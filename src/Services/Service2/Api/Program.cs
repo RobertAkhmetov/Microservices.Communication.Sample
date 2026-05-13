@@ -1,4 +1,4 @@
-using Microservices.Communication.Sample.Service2.Application;
+using Service2.Application;
 using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);

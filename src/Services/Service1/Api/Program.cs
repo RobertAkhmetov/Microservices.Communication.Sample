@@ -1,5 +1,5 @@
-using Microservices.Communication.Sample.Service1.Application;
-using Microservices.Communication.Sample.Service1.Infrastructure;
+using Service1.Application;
+using Service1.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 

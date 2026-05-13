@@ -1,6 +1,6 @@
-﻿using Confluent.Kafka;
+using Confluent.Kafka;
 
-namespace Microservices.Communication.Sample.Service1.Infrastructure.Interfaces.Kafka;
+namespace Service1.Infrastructure.Interfaces.Kafka;
 
 public interface IKafkaProducerService
 {

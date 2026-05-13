@@ -1,4 +1,4 @@
-namespace Microservices.Communication.Sample.Contracts.Messaging;
+namespace Contracts.Messaging;
 
 public sealed record ServiceBaseRequest(
     Guid RequestId,

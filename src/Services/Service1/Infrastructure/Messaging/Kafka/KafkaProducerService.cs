@@ -1,10 +1,10 @@
-﻿using Confluent.Kafka;
-using Microservices.Communication.Sample.Service1.Infrastructure.Interfaces.Kafka;
+using Confluent.Kafka;
+using Service1.Infrastructure.Interfaces.Kafka;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System.Text.Json;
 
-namespace Microservices.Communication.Sample.Service1.Infrastructure.Messaging.Kafka;
+namespace Service1.Infrastructure.Messaging.Kafka;
 
 public class KafkaProducerService : IKafkaProducerService, IDisposable
 {

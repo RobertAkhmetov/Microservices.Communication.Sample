@@ -1,9 +1,9 @@
 using MediatR;
-using Microservices.Communication.Sample.Contracts.Messaging;
-using Microservices.Communication.Sample.Service1.Application.Abstractions.Messaging;
-using Microservices.Communication.Sample.Service1.Domain.Entities;
+using Contracts.Messaging;
+using Service1.Application.Abstractions.Messaging;
+using Service1.Domain.Entities;
 
-namespace Microservices.Communication.Sample.Service1.Application.Features.SendBaseMessageToService2;
+namespace Service1.Application.Features.SendBaseMessageToService2;
 
 internal sealed class SendBaseMessageToService2CommandHandler(IService2Messenger service2Messenger)
     : IRequestHandler<SendBaseMessageToService2Command, SendBaseMessageToService2Result>

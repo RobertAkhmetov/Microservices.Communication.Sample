@@ -1,4 +1,4 @@
-namespace Microservices.Communication.Sample.Service1.Api.Contracts;
+namespace Service1.Api.Contracts;
 
 public sealed record SendBaseMessageResponse(
     Guid RequestId,

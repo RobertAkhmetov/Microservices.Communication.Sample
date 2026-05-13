@@ -1,4 +1,4 @@
-namespace Microservices.Communication.Sample.Service1.Application.Features.SendBaseMessageToService2;
+namespace Service1.Application.Features.SendBaseMessageToService2;
 
 public sealed record SendBaseMessageToService2Result(
     Guid RequestId,

@@ -1,12 +1,12 @@
 using System.Text.Json;
-using Microservices.Communication.Sample.Contracts.Messaging;
-using Microservices.Communication.Sample.Service1.Application.Abstractions.Messaging;
-using Microservices.Communication.Sample.Service1.Infrastructure.Configuration;
+using Contracts.Messaging;
+using Service1.Application.Abstractions.Messaging;
+using Service1.Infrastructure.Configuration;
 using Microsoft.Extensions.Options;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
-namespace Microservices.Communication.Sample.Service1.Infrastructure.Messaging.RabbitMq;
+namespace Service1.Infrastructure.Messaging.RabbitMq;
 
 internal sealed class RabbitMqService2Messenger(
     RabbitMqConnectionProvider connectionProvider,

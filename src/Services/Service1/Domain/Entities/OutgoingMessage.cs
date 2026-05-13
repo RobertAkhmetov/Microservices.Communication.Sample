@@ -1,4 +1,4 @@
-namespace Microservices.Communication.Sample.Service1.Domain.Entities;
+namespace Service1.Domain.Entities;
 
 public sealed class OutgoingMessage
 {

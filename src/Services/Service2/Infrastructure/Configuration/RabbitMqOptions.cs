@@ -1,4 +1,4 @@
-namespace Microservices.Communication.Sample.Service2.Infrastructure.Configuration;
+namespace Service2.Infrastructure.Configuration;
 
 public sealed class RabbitMqOptions
 {

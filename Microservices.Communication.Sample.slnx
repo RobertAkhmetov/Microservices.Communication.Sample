@@ -8,33 +8,33 @@
   <Folder Name="/src/" />
   <Folder Name="/src/BuildingBlocks/" />
   <Folder Name="/src/BuildingBlocks/Contracts/">
-    <Project Path="src/BuildingBlocks/Contracts/Microservices.Communication.Sample.Contracts.csproj" />
+    <Project Path="src/BuildingBlocks/Contracts/Contracts.csproj" />
   </Folder>
   <Folder Name="/src/Services/" />
   <Folder Name="/src/Services/Service1/" />
   <Folder Name="/src/Services/Service1/Api/">
-    <Project Path="src/Services/Service1/Api/Microservices.Communication.Sample.Service1.Api.csproj" />
+    <Project Path="src/Services/Service1/Api/Service1.Api.csproj" />
   </Folder>
   <Folder Name="/src/Services/Service1/Application/">
-    <Project Path="src/Services/Service1/Application/Microservices.Communication.Sample.Service1.Application.csproj" />
+    <Project Path="src/Services/Service1/Application/Service1.Application.csproj" />
   </Folder>
   <Folder Name="/src/Services/Service1/Domain/">
-    <Project Path="src/Services/Service1/Domain/Microservices.Communication.Sample.Service1.Domain.csproj" />
+    <Project Path="src/Services/Service1/Domain/Service1.Domain.csproj" />
   </Folder>
   <Folder Name="/src/Services/Service1/Infrastructure/">
-    <Project Path="src/Services/Service1/Infrastructure/Microservices.Communication.Sample.Service1.Infrastructure.csproj" />
+    <Project Path="src/Services/Service1/Infrastructure/Service1.Infrastructure.csproj" />
   </Folder>
   <Folder Name="/src/Services/Service2/" />
   <Folder Name="/src/Services/Service2/Api/">
-    <Project Path="src/Services/Service2/Api/Microservices.Communication.Sample.Service2.Api.csproj" />
+    <Project Path="src/Services/Service2/Api/Service2.Api.csproj" />
   </Folder>
   <Folder Name="/src/Services/Service2/Application/">
-    <Project Path="src/Services/Service2/Application/Microservices.Communication.Sample.Service2.Application.csproj" />
+    <Project Path="src/Services/Service2/Application/Service2.Application.csproj" />
   </Folder>
   <Folder Name="/src/Services/Service2/Domain/">
-    <Project Path="src/Services/Service2/Domain/Microservices.Communication.Sample.Service2.Domain/Microservices.Communication.Sample.Service2.Domain.csproj" />
+    <Project Path="src/Services/Service2/Domain/Service2.Domain.csproj" />
   </Folder>
   <Folder Name="/src/Services/Service2/Infrastructure/">
-    <Project Path="src/Services/Service2/Infrastructure/Microservices.Communication.Sample.Service2.Infrastructure.csproj" />
+    <Project Path="src/Services/Service2/Infrastructure/Service2.Infrastructure.csproj" />
   </Folder>
 </Solution>

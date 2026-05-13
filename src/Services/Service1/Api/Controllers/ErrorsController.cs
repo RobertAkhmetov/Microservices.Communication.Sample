@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Microservices.Communication.Sample.Service1.Api.Controllers;
+namespace Service1.Api.Controllers;
 
 [ApiExplorerSettings(IgnoreApi = true)]
 [Route("error")]

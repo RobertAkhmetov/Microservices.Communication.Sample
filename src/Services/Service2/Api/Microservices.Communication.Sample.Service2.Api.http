@@ -1,8 +1,0 @@
-@Microservices.Communication.Sample.Service2.Api_HostAddress = http://localhost:5098
-
-### Swagger UI: {{Microservices.Communication.Sample.Service2.Api_HostAddress}}/swagger
-
-GET {{Microservices.Communication.Sample.Service2.Api_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
