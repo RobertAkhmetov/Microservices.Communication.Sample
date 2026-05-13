@@ -19,11 +19,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
 app.MapPost("/service1/base", async ([FromBody] SendBaseMessageRequest request, CancellationToken token) =>
 {
     try
@@ -35,11 +30,6 @@ app.MapPost("/service1/base", async ([FromBody] SendBaseMessageRequest request, 
         throw;
     }
 })
-.WithName("GetWeatherForecast");
+.WithName("Send message to service 1");
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
