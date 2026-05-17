@@ -1,4 +1,3 @@
-version: '3.8'
 
 services:
   # Брокер по умолчанию - RabbitMQ
@@ -28,7 +27,6 @@ services:
       - kafka
 
 
-
   kafka:
     image: confluentinc/cp-kafka:7.3.0
     container_name: microservices-sample-kafka
@@ -47,21 +45,19 @@ services:
     profiles:
       - kafka
 
-
-
-    kafka-ui:
-        image: provectuslabs/kafka-ui:latest
-        container_name: kafka-ui
-        ports:
-            - "8080:8080"
-        environment:
-            - KAFKA_CLUSTERS_0_NAME=local
-            - KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=kafka:29092
-            - KAFKA_CLUSTERS_0_ZOOKEEPER=zookeeper:2181
-        depends_on:
-            - kafka
-            - zookeeper
-        profiles:
-          - kafka
+  kafka-ui:
+    image: provectuslabs/kafka-ui:latest
+    container_name: kafka-ui
+    ports:
+        - "8080:8080"
+    environment:
+        - KAFKA_CLUSTERS_0_NAME=local
+        - KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=kafka:29092
+        - KAFKA_CLUSTERS_0_ZOOKEEPER=zookeeper:2181
+    depends_on:
+        - kafka
+        - zookeeper
+    profiles:
+      - kafka
 
     
