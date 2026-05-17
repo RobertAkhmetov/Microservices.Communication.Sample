@@ -21,9 +21,11 @@ public static class DependencyInjection
             .ValidateOnStart();
 
         services.AddSingleton<RabbitMqConnectionProvider>();
-        services.AddScoped<IService2Messenger, RabbitMqService2Messenger>();
+        //services.AddScoped<IService2Messenger, RabbitMqService2Messenger>();
 
         services.AddSingleton<IKafkaProducerService, KafkaProducerService>();
+        services.AddScoped<IService2Messenger, KafkaProducerService>();
+        
 
         var config = new ProducerConfig
         {

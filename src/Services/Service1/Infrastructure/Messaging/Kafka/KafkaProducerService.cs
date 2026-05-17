@@ -3,10 +3,12 @@ using Service1.Infrastructure.Interfaces.Kafka;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System.Text.Json;
+using Service1.Application.Abstractions.Messaging;
+using Contracts.Messaging;
 
 namespace Service1.Infrastructure.Messaging.Kafka;
 
-public class KafkaProducerService : IKafkaProducerService, IDisposable
+public class KafkaProducerService : IService2Messenger, IKafkaProducerService, IDisposable
 {
     private readonly IProducer<string, string> _stringProducer;
     private readonly ILogger<KafkaProducerService> _logger;
@@ -78,5 +80,12 @@ public class KafkaProducerService : IKafkaProducerService, IDisposable
         _stringProducer.Dispose();
         _disposed = true;
         GC.SuppressFinalize(this);
+    }
+
+    public async Task<ServiceBaseResponse> RequestBaseMessageAsync(ServiceBaseRequest request, CancellationToken cancellationToken)
+    {
+        await ProduceAsync("service_1_to_service_2", request.RequestId.ToString(), request.Message);
+
+        return new ServiceBaseResponse(Guid.CreateVersion7(), "пока заглушка типа ответил", DateTimeOffset.Now);
     }
 }
