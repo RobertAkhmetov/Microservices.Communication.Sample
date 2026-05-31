@@ -1,9 +1,9 @@
-using System.Collections;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Service2.Application;
 using Service2.Application.Abstractions.Messaging;
 using Service2.Infrastructure.Configuration;
 using Service2.Infrastructure.Messaging;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 
 public static class DependencyInjection
 {
@@ -18,6 +18,8 @@ public static class DependencyInjection
 
         services.AddSingleton<RabbitMqConnectionProvider>();
         services.AddScoped<IService1Messenger, RabbitMqService1Messenger>();
+
+        services.AddScoped<IConsumerService, KafkaConsumerService>();
 
         // services.AddSingleton<IKafkaProducerService, KafkaProducerService>();
 

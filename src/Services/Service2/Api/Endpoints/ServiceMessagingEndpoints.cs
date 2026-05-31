@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using Service2.Application.Abstractions.Messaging.Features.Queriess;
 
 namespace Service2.Api.Endpoints;
 
@@ -13,7 +15,7 @@ public static class ServiceMessagingEndpoints
 
     }
 
-    private static async Task SendMessageToService1Async([FromBody] SendBaseMessageRequest request, CancellationToken token)
+    private static async Task SendMessageToService1Async([FromBody] SendBaseMessageRequest request, ISender sender, CancellationToken token)
     {
         try
         {
@@ -25,9 +27,9 @@ public static class ServiceMessagingEndpoints
         }
     }
 
-    private static async Task<string> GetMessagesFromQueryAsync(CancellationToken token)
+    private static async Task<string> GetMessagesFromQueryAsync(ISender sender, CancellationToken token)
     {
-
+        var result = await sender.Send(new GetMessagesQuery(), token);
 
         return "test";
     }

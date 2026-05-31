@@ -5,7 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Service2.Infrastructure.Interfaces.Kafka;
 
-public class KafkaProducerService : IKafkaProducerService, IDisposable
+public class KafkaProducerService : IKafkaProducerService
 {
     private readonly IProducer<string, string> _stringProducer;
     private readonly ILogger<KafkaProducerService> _logger;

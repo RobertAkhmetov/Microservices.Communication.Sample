@@ -1,6 +1,5 @@
-using MediatR;
 using Contracts.Messaging;
-using Service2.Application.Abstractions.Messaging;
+using MediatR;
 using Service2.Domain.Entities;
 
 namespace Service2.Application.Abstractions.Messaging.Features.Commands.SendBaseMessageToService1;
