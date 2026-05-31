@@ -1,5 +1,5 @@
+using Service2.Api.Endpoints;
 using Service2.Application;
-using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,17 +19,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapPost("/service1/base", async ([FromBody] SendBaseMessageRequest request, CancellationToken token) =>
-{
-    try
-    {
-        //var result = await sender
-    }
-    catch (Exception)
-    {
-        throw;
-    }
-})
-.WithName("Send message to service 1");
+app.MapServiceMessagingEndpoints();
 
 app.Run();
